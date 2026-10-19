@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Caiado Pneus CRM",
+  "version": "1.0",
+  "permissions": ["storage", "alarms", "notifications"],
+  "content_scripts": [{
+    "matches": ["https://whatsapp.com*"],
+    "js": ["content.js"]
+  }],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
